@@ -1,0 +1,167 @@
+<html lang="id"><script src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/content/location/location.js" id="pphgdbgldlmicfdkhondlafkiomnelnk"></script><script src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/libs/extend-native-history-api.js"></script><script src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/libs/requests.js"></script><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promo WhatsApp Otomatis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background-color: #fdfdfd;
+      text-align: center;
+    }
+    h1 {
+      color: #A15E0F;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    #promo {
+      font-size: 1rem;
+      color: #222;
+      margin: 20px auto;
+      line-height: 1.6;
+      max-width: 400px;
+    }
+    button {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px 20px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      background-color: #A15E0F;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 300px;
+    }
+    button:hover {
+      background-color: #8e4f0c;
+    }
+    input {
+      padding: 10px;
+      font-size: 1rem;
+      width: 90%;
+      max-width: 300px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/../executors/traffic.js"></script></head>
+<body __processed_74db897f-9aed-4a18-a398-fcc6ed77c5f2__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6InBwaGdkYmdsZGxtaWNmZGtob25kbGFma2lvbW5lbG5rIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4yNCIsInNjb3JlIjoyMDAyNH1d">
+
+  <h1>🎁 CAGARBOLA 🎁</h1>
+  <div id="promo" bis_skin_checked="1">Cuma isi deposit pakai kode L6L35Z, langsung dapet Rp193.870 di <a href="https://cagarniat.ink" target="_blank">cagarniat.ink</a>. Top up QRIS cuma 10rb, langsung gas cuan!</div>
+
+  <button onclick="generatePromo()">Generate</button>
+
+  <div bis_skin_checked="1">
+    <input type="tel" id="phoneNumber" placeholder="Masukkan nomor HP (628xxxx)">
+    <button onclick="sendToWhatsApp()">Kirim ke WhatsApp</button>
+    <button oneclick="sendToCOPY()">COPY</button>
+  </div>
+
+  <script nonce="MzUyMTAxNjYzMSwyMTU1MzI4NDA0">
+  const links = [
+    "cagarpintar.com",
+    "cagaringat.ink",
+    "cagarniat.ink",
+    "cagarberani.ink"
+  ];
+
+  const templates = [
+    "Mau dapat Rp{amount}? Gampang banget! Masuk ke {link} dan pakai kode {code}.",
+    "Kode spesial {code} bisa bikin kamu dapet Rp{amount} cuma-cuma. Coba langsung di {link}!",
+    "Cuma isi deposit pakai kode {code}, langsung dapet Rp{amount} di {link}.",
+    "Khusus pengguna cepat! Masukkan kode {code} & claim Rp{amount} di {link} sekarang juga!",
+    "Gak percaya? Masuk ke {link} dan buktiin sendiri! Pakai kode {code} buat dapetin Rp{amount}.",
+    "Gak perlu ribet. Deposit pake kode {code} dan cuan Rp{amount} bisa langsung kamu klaim di {link}!"
+  ];
+
+  const extras = [
+    "Deposit QRIS hanya 10.000, proses hanya 1 detik!",
+    "Minimal deposit cuma 10rb via QRIS, langsung masuk!",
+    "Proses kilat! QRIS cuma 10.000 udah bisa main.",
+    "QRIS tersedia, cukup 10 ribu dan instan masuk!",
+    "Top up QRIS cuma 10rb, langsung gas cuan!"
+  ];
+
+  let lastPlainText = "";
+
+  function getRandomCode() {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const numbers = "0123456789";
+    let chars = [];
+
+    for (let i = 0; i < 3; i++) chars.push(letters[Math.floor(Math.random() * letters.length)]);
+    for (let i = 0; i < 3; i++) chars.push(numbers[Math.floor(Math.random() * numbers.length)]);
+
+    for (let i = chars.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [chars[i], chars[j]] = [chars[j], chars[i]];
+    }
+
+    return chars.join('');
+  }
+
+  function getRandomAmount() {
+    return Math.floor(Math.random() * (250000 - 70000 + 1)) + 70000;
+  }
+
+  function formatRupiah(angka) {
+    return angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
+  function generatePromo() {
+    const code = getRandomCode();
+    const amount = formatRupiah(getRandomAmount());
+    const link = links[Math.floor(Math.random() * links.length)];
+    const template = templates[Math.floor(Math.random() * templates.length)];
+    const extra = extras[Math.floor(Math.random() * extras.length)];
+
+    const plain = `${template
+      .replace(/{code}/g, code)
+      .replace(/{amount}/g, amount)
+      .replace(/{link}/g, link)} ${extra}`;
+
+    lastPlainText = plain;
+
+    const htmlWithLink = plain.replace(
+      new RegExp(link, 'g'),
+      `<a href="https://${link}" target="_blank">${link}</a>`
+    );
+
+    document.getElementById("promo").innerHTML = htmlWithLink;
+  }
+
+  function sendToWhatsApp() {
+    const phone = document.getElementById("phoneNumber").value.trim();
+    if (!lastPlainText) {
+      alert("Silakan generate promo dulu!");
+      return;
+    }
+    if (!phone || !/^628[0-9]{8,}$/.test(phone)) {
+      alert("Masukkan nomor HP valid dengan format 628xxxx...");
+      return;
+    }
+
+    const encodedMessage = encodeURIComponent(lastPlainText);
+    const waUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+    window.open(waUrl, '_blank');
+  }
+
+  // Auto-generate promo saat halaman dibuka
+  generatePromo();
+  </script>
+
+
+</body></html>
